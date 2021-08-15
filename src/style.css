@@ -109,7 +109,7 @@ p {
   color: rgba(141, 198, 255, 0.5);
 }
 
-.search-bar {
+.search-city-form {
   max-width: 400px !important;
   margin: 0 auto;
   width: 100%;
@@ -141,11 +141,11 @@ p {
   border-color: #22313f;
 }
 
-button {
+.search-city {
   background-color: #8dc6ff;
   border: 1px solid #8dc6ff;
   border-radius: 4px;
   color: #fff;
-  display: inline-block;
+  display: inline;
   padding: 2px 5px;
 }

@@ -29,18 +29,20 @@
       <div class="container current-weather">
         <div class="row search-bar-container">
           <div class="col-10 search-bar">
-            <input
-              class="form-control"
-              id="city-input"
-              type="text"
-              placeholder="Search City"
-            />
-            <button class="search-city">Search</button>
-            <i
-              class="fas fa-map-marker-alt"
-              id="get-current-location"
-              title="Get My Current Location"
-            ></i>
+            <form class="search-city-form">
+              <input
+                class="form-control"
+                id="city-input"
+                type="text"
+                placeholder="Search City"
+              />
+              <button type="submit" class="search-city">Search</button>
+              <i
+                class="fas fa-map-marker-alt"
+                id="get-current-location"
+                title="Get My Current Location"
+              ></i>
+            </form>
           </div>
           <div class="col-2 metric-option">
             <input
