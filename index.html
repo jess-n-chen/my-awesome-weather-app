@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes Plus Homework</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ec09384b84.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container current-weather">
+        <div class="row search-bar-container">
+          <div class="col-10 search-bar">
+            <input
+              class="form-control"
+              id="city-input"
+              type="text"
+              placeholder="Search City"
+            />
+            <button class="search-city">Search</button>
+            <i
+              class="fas fa-map-marker-alt"
+              id="get-current-location"
+              title="Get My Current Location"
+            ></i>
+          </div>
+          <div class="col-2 metric-option">
+            <input
+              type="radio"
+              id="radioCel"
+              name="radioMetric"
+              value="°C"
+              checked
+            />
+            <label for="radioCel">°C</label>
+            <input type="radio" id="radioFah" name="radioMetric" value="°F" />
+            <label for="radioFah">°F</label>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="row">
+          <div class="col">
+            <h1 id="current-city">New York</h1>
+            <div class="row">
+              <div class="col">
+                <i class="fas fa-cloud-moon current-temp-icon"></i>
+                <p class="current-temp">24°C</p>
+              </div>
+              <div class="col">
+                <p><strong>Precipitation: </strong>15%</p>
+                <p><strong>Humidity: </strong>81%</p>
+                <p><strong>Wind: </strong>10 km/h</p>
+              </div>
+            </div>
+          </div>
+          <div class="col date-time-description">
+            <h2 id="date-value">Sun, Jul 25</h2>
+            <h2 id="time-value">10:00pm ET</h2>
+            <h2>Cloudy</h2>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="row future-weather">
+          <div class="col-2">
+            <p class="future-day">Mon</p>
+            <i class="fas fa-sun future-temp-icon"></i>
+            <p class="future-temp">
+              31° / <span class="future-temp-low">18°</span>
+            </p>
+          </div>
+          <div class="col-2">
+            <p class="future-day">Tues</p>
+            <i class="fas fa-cloud-rain future-temp-icon"></i>
+            <p class="future-temp">
+              25° / <span class="future-temp-low">16°</span>
+            </p>
+          </div>
+          <div class="col-2">
+            <p class="future-day">Wed</p>
+            <i class="fas fa-cloud-sun future-temp-icon"></i>
+            <p class="future-temp">
+              25° / <span class="future-temp-low">17°</span>
+            </p>
+          </div>
+          <div class="col-2">
+            <p class="future-day">Thurs</p>
+            <i class="fas fa-cloud-sun future-temp-icon"></i>
+            <p class="future-temp">
+              26° / <span class="future-temp-low">16°</span>
+            </p>
+          </div>
+          <div class="col-2">
+            <p class="future-day">Fri</p>
+            <i class="fas fa-cloud-rain future-temp-icon"></i>
+            <p class="future-temp">
+              21° / <span class="future-temp-low">13°</span>
+            </p>
+          </div>
+          <div class="col">
+            <p class="future-day">Sat</p>
+            <i class="fas fa-cloud-sun future-temp-icon"></i>
+            <p class="future-temp">
+              25° / <span class="future-temp-low">17°</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
