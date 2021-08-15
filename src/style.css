@@ -20,6 +20,12 @@ p {
   color: rgba(34, 49, 63, 0.5);
 }
 
+footer p,
+footer a {
+  text-align: center;
+  color: #fff !important;
+}
+
 .main-container {
   border: 2px solid #e4f1fe;
   border-radius: 25px;
